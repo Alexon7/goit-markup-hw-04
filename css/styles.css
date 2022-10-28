@@ -218,7 +218,7 @@ img {
 	justify-content: center;
 }
 .overlay {
-	max-width: 1600;
+	max-width: 1600px;
 	height: 600px;
 	margin-left: auto;
 	margin-right: auto;
@@ -296,6 +296,30 @@ img {
 .benefits-main .item + .item {
 	margin-left: 30px;
 }
+.benefits-main .item::before {
+	content: "";
+	display: block;
+	height: 120px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: #f5f4fa;
+	border-radius: 4px;
+	margin-bottom: 30px;
+}
+.icon-antenna::before {
+	background-image: url(../images/antenna.svg);
+}
+.icon-clock::before {
+	background-image: url(../images/clock.svg);
+}
+.icon-diagram::before{
+	background-image: url(../images/diagram.svg);
+}
+.icon-astronaut::before{
+	background-image: url(../images/astronaut.svg);
+}
+
 .benefits {
 	font-weight: 700;
 	font-size: 14px;
