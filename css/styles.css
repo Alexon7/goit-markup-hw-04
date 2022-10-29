@@ -77,7 +77,9 @@ img {
 	color: var(--accent-color);
 }
 .link {
-	display: block;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 
 	color: var(--primary-text-color);
 	font-weight: 500;
@@ -115,14 +117,12 @@ img {
 	margin-left: 50px;
 }
 .item-mail,
-.item-phone{
-	
+.item-phone {
 	margin-right: 10px;
-	
 }
-.item-mail:hover,
-.item-phone:hover{
-	color: var(--accent-color);
+.item-mail:hover svg,
+.item-phone:hover svg {
+	fill: var(--accent-color);
 }
 
 .filter-title {
@@ -313,9 +313,8 @@ img {
 	background-color: #f5f4fa;
 	border-radius: 4px;
 	margin-bottom: 30px;
-	
 }
-.icon-card {	
+.icon-card {
 	margin: auto;
 	width: 70px;
 	height: 70px;
@@ -393,8 +392,8 @@ img {
 	text-align: center;
 	color: var(--primary-text-color);
 }
-.team-social{
+.team-social {
 	width: 20px;
 	height: 20px;
-	color:#AFB1B8;
+	color: #afb1b8;
 }
