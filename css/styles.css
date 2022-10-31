@@ -92,9 +92,11 @@ img {
 .link:focus {
 	color: var(--accent-color);
 }
-.link:hover svg {
-	color: var(--accent-color);
+.link:hover svg,
+.link:focus svg {
+	fill: var(--accent-color);
 }
+
 .site-nav {
 	display: flex;
 	margin-left: 93px;
@@ -125,7 +127,9 @@ img {
 	fill: var(--primary-text-color);
 }
 .item-mail:hover,
-.item-phone:hover {
+.item-phone:hover,
+.item-mail:focus,
+.item-phone:focus {
 	fill: var(--accent-color);
 }
 
@@ -182,7 +186,8 @@ img {
 	margin-top: var(--card-set-gap);
 	background-color: #ffffff;
 }
-.works:hover{
+.works:hover,
+.works:focus {
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -316,15 +321,17 @@ img {
 .benefits-main .item + .item {
 	margin-left: 30px;
 }
+
 .item-card {
 	display: flex;
 	height: 120px;
 	background-color: #f5f4fa;
 	border-radius: 4px;
 	margin-bottom: 30px;
+	justify-content: center;
+	align-items: center;
 }
 .icon-card {
-	margin: auto;
 	width: 70px;
 	height: 70px;
 }
@@ -371,9 +378,8 @@ img {
 .work-example .item + .item {
 	margin-left: 30px;
 }
-.team-all{
-	background: #F5F4FA;
-;
+.team-all {
+	background: #f5f4fa;
 }
 .our-team {
 	display: flex;
@@ -419,10 +425,12 @@ img {
 	align-items: center;
 	justify-content: center;
 }
-.social-link:hover {
+.social-link:hover,
+.social-link:focus {
 	background: var(--accent-color);
 }
-.social-link:hover svg {
+.social-link:hover svg,
+.social-link:focus svg {
 	fill: var(--accent-button-color);
 }
 .item-social {
@@ -437,7 +445,8 @@ img {
 	height: 20px;
 	fill: #afb1b8;
 }
-.team-social:hover {
+.team-social:hover,
+.team-social:focus {
 	color: var(--accent-button-color);
 }
 .client {
@@ -455,10 +464,12 @@ img {
 	align-items: center;
 	justify-content: center;
 }
-.client-link:hover {
+.client-link:hover,
+.client-link:focus {
 	border: 1px solid #2196f3;
 }
-.client-link:hover svg {
+.client-link:hover svg,
+.client-link:focus svg {
 	fill: var(--accent-color);
 }
 .client-logo {
@@ -472,9 +483,7 @@ img {
 	line-height: 1.14;
 	text-transform: uppercase;
 
-
 	color: var(--accent-button-color);
-	
 }
 .net-item-social {
 	display: flex;
@@ -492,7 +501,8 @@ img {
 	align-items: center;
 	justify-content: center;
 }
-.net-item-social .social-link:hover {
+.net-item-social .social-link:hover,
+.net-item-social .social-link:focus {
 	background: var(--accent-color);
 }
 .net-item-social .team-social {
@@ -500,10 +510,10 @@ img {
 	height: 20px;
 	fill: var(--accent-button-color);
 }
-.footer-all{
+.footer-all {
 	display: flex;
 	gap: 70px;
 }
-.come-back{
+.come-back {
 	padding-top: 12px;
 }
