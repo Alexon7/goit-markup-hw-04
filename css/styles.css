@@ -513,7 +513,9 @@ img {
 .footer-all {
 	display: flex;
 	gap: 70px;
+	align-items: baseline;
+	
 }
-.come-back {
+/* .come-back {
 	padding-top: 12px;
-}
+} */
